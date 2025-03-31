@@ -1,0 +1,46 @@
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_palivo{
+    background-color: blue;
+    padding: 20px;
+    position: relative;
+}
+
+.icon_kapalina {
+    position: absolute;
+    left: 47.9%;
+    bottom: 82%;
+    width: 22px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kapalina {
+    width: 100%;
+    height: 0%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+.icon:hover .kapalina {
+    animation: roste 2s ease-out forwards;
+}
+
+@keyframes roste {
+    0% {
+        height: 10%;
+    }
+    50% {
+        height: 5%;
+    }
+    100% {
+        height: 60%;
+    }
+}
